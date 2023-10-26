@@ -1,0 +1,45 @@
+HTTP/1.1 and HTTP/2 are two different versions of the HTTP (Hypertext Transfer Protocol) used for transmitting data over the web.
+
+
+
+WHAT IS HTTP1.1?
+
+ In simple terms, JavaScript can be used to request and retrieve data from web servers. When it does this with HTTP/1.1, it uses methods like XMLHttpRequest or the Fetch API. These methods help JavaScript talk to the server and get the data it needs.
+
+WHAT IS HTTP2?
+
+In simple terms, HTTP/2 is an improved way for your web browser to talk to websites. It helps websites load faster and be more efficient. It's like upgrading from a slow, one-lane road to a superhighway for data on the internet. With HTTP/2, websites can send and receive multiple pieces of information at the same time, making your web experience quicker and smoother. It's all about making the internet work better for you!
+
+DIFFERENCE BETWEEN HTTP1.1 AND HTTP2:
+
+1.Multiplexing:
+
+HTTP/1.1: In HTTP/1.1, each resource (e.g., HTML, CSS, JavaScript, images) is requested and delivered sequentially over a single TCP connection. This can lead to head-of-line blocking, where a slow-loading resource delays the loading of other resources.
+HTTP/2: HTTP/2 supports multiplexing, allowing multiple requests and responses to be sent in parallel over a single connection. This eliminates the head-of-line blocking issue, significantly improving page loading times for complex websites.
+
+2.Header Compression:
+
+HTTP/1.1: Headers in HTTP/1.1 requests and responses are not compressed. This results in a significant amount of redundant data being transmitted, which can slow down the loading of web pages, especially when multiple resources are involved.
+HTTP/2: HTTP/2 uses header compression, which reduces the overhead associated with headers, making the communication more efficient and faster.
+
+3.Binary Protocol:
+
+HTTP/1.1: HTTP/1.1 uses plain text for communication, which is human-readable but can be less efficient due to its verbosity.
+HTTP/2: HTTP/2 uses a binary protocol, which is more compact and efficient for both the transmission of headers and data.
+
+4.Server Push:
+
+HTTP/1.1: Server push is not a feature of HTTP/1.1.
+HTTP/2: HTTP/2 introduces server push, where the server can proactively send resources to the client's cache before they are requested. This reduces the need for multiple round trips between the client and server and accelerates page loading.
+
+5.Resource Prioritization:
+
+HTTP/1.1: HTTP/1.1 lacks built-in support for specifying the priority of resources, which means that the browser might load resources in an order that's less optimal for page rendering.
+HTTP/2: HTTP/2 allows for resource prioritization, enabling developers to indicate the importance of different resources. This ensures that critical resources are loaded first, enhancing the user experience.
+
+6.Backward Compatibility:
+
+HTTP/1.1: HTTP/1.1 is backward compatible with older versions of the protocol, allowing it to be used on websites that haven't upgraded.
+HTTP/2: HTTP/2 is designed to be fully backward compatible with HTTP/1.1, meaning it can be used on websites that have not yet upgraded to the new protocol. Browsers and servers that support HTTP/2 can negotiate its use when accessing a website.
+
+***********************************************************************************************************************************************************************

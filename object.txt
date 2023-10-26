@@ -1,0 +1,32 @@
+
+OBJECTS IN JAVASCRIPT:
+
+In JavaScript, objects are one of the most fundamental data types and are at the core of the language. Objects are collections of key-value pairs, where each key is a string (or a symbol in modern JavaScript) and each value can be of any data type, including other objects. This key-value structure allows you to store and organize data in a structured and flexible way.
+
+EXAMPLE:
+const person = {
+  name: "tamizh",
+  age: 25,
+  city: "chennai"
+};
+
+In this object, person has three properties: name, age, and city, each associated with a value.
+
+console.log(person.name); // Outputs: "tamizh"
+console.log(person.age);  // Outputs: 25
+console.log(person.city); // Outputs: "chennai"
+
+Objects: The Data Containers
+
+Objects in JavaScript are like containers. Think of them as boxes with labels on them. These labels are called properties, and they can hold values. Values can be numbers, text, or even more boxes (objects).
+
+Prototypes and Inheritance:
+
+Objects in JavaScript can also have a family tree. 
+If an object doesn't have a particular property, it looks up in its parent object, and that parent may have its own parent, forming a chain. This is called prototype-based inheritance, and it's how objects can share and inherit properties and methods.
+
+Copying Objects:
+
+Sometimes, you need to make copies of objects. When you copy an object, you want it to be independent, not a reference to the same object.
+ JavaScript has ways to do this, like using the spread operator ({...}) or built-in methods like Object.assign().
+
